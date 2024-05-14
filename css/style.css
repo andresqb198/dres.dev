@@ -12,14 +12,14 @@ body{
 .timeline{
     position:relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 30px auto;
 }
 
 .container{
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    border-radius: 6px;
+    border-radius: 10px;
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -31,10 +31,53 @@ body{
     font-size: 15px;
 }
 
-.left-xontainer{
+.left-container{
     left: 0;
 }
 
 .right-container{
     left: 50%;
+}
+
+.container img{
+   position:absolute; 
+   width: 180px;
+   border-radius: 50%;
+   right: -160px;
+   top: 17px;
+   z-index: 10;
+}
+
+.right-container img{
+    left: -160px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
 }
